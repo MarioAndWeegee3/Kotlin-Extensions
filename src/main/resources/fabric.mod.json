@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "kotlinextensions",
+  "version": "${version}",
+  "name": "Kotlin Extensions",
+  "description": "Adds useful extensions to Minecraft's default types",
+  "authors": [
+    "MarioAndWeegee3"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://github.com/MarioAndWeegee3",
+    "sources": "https://github.com/MarioAndWeegee3"
+  },
+  "license": "MIT",
+  "icon": "assets/kotlinextensions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "marioandweegee3.kotlinextensions.Extensions"
+      },
+      {
+        "adapter": "kotlin",
+        "value": "marioandweegee3.kotlinextensions.test.Tests"
+      }
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "custom": {
+    "modmenu:api": true
+  }
+}
